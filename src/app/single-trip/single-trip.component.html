@@ -1,0 +1,77 @@
+
+<div class="container">
+    <a routerLink="/trips" class="return">Powrót do wycieczek</a>
+    <div class="card" *ngIf="trips != undefined">
+        <div class="image">
+            <picture>
+                 <img src={{trips[getIndexOfTrip(id)].Image[currPhoto]}} alt="" >
+                <button class="leftBtn" (click)="updateLeft()"><</button>
+                <button class="rightBtn" (click)="updateRight()">></button>
+            </picture>
+        </div>
+        <div class="text">
+            <h3 class="title">{{trips[getIndexOfTrip(id)].Name}}</h3>
+            <h4 class="country">Kraj</h4>
+            <p>{{trips[getIndexOfTrip(id)].Country}}</p>
+     
+            <h4 class="duration">Czas trwania</h4>
+            <p class="start">Data rozpoczęcia wyczieczki: {{trips[getIndexOfTrip(id)].Start}}</p>
+            <p class="end">Data zakończenia wyczieczki: {{trips[getIndexOfTrip(id)].End}}</p>
+       
+            <p class="freeSlots">Pozostało tylko {{trips[getIndexOfTrip(id)].Amount}} miejsc. Zarezerwuj już dziś!</p>
+            <p class="price">Cena: {{trips[getIndexOfTrip(id)].Price * rate}} {{currency}}</p>
+       
+            <h4 class="shortDesc">Krótki Opis</h4>
+            <p>{{trips[getIndexOfTrip(id)].Description}}</p>
+        
+            <h4 class="longDesc">Szczegółowe ingormacje</h4>
+            <p class="longDescp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam odio nam dolorem harum, laborum provident eligendi, officia impedit fugit a aliquam adipisci architecto temporibus cumque vero laboriosam suscipit inventore minima?</p>
+        </div>
+    </div>
+    
+    <div class="comments">
+        <div class="myComment">
+            <form [formGroup]="modelForm">
+                <div class="commentBox">
+                    <textarea formControlName="Description" required placeholder="Zostaw komentarz i ocenę"></textarea>
+               </div>
+               <p *ngIf="showTextAreaError">Wypełnij to pole</p>
+               <div class="ratings">
+                    <div *ngFor="let i of stars">
+                            <i class="fa fa-star checked" (click)="update(i)" [ngClass]="{'active' : i <= currRating}"></i>
+                    </div>
+               </div>
+               <p class="ratingSubmit" *ngIf="showRatingError">Dodaj ocenę</p>
+               <button type="submit" (click)="submitForm()">Dodaj komentarz</button>
+            </form>
+        </div>
+        <div  *ngIf="reviews != undefined">
+            <div *ngFor="let review of reviews; let x = index" [attr.data-index]="x">
+                <div class="singleComment">
+                    <div class="upper">
+        
+                        <strong class="nick">{{review.Nickname}}</strong>
+                        <div class="ratingsComments">
+                            <div *ngFor="let i of starsCount(review.Rating)">
+                                <i class="fa fa-star checked" [ngClass]="{'active' : i <= review.Rating}"></i>
+                            </div>
+                        </div>
+                        <div class="date">
+                            {{review.Date}}
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <p class="desc">{{review.Description}}</p>
+                    </div>
+                    <div class="lower">
+                        <i class="fa fa-thumbs-up" (click)="like(x)"></i>
+                        {{review.Likes}}
+                        <i class="fa fa-thumbs-down" (click)="dislike(x)"></i>
+                        {{review.Dislikes}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

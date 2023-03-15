@@ -1,0 +1,231 @@
+{
+    "Reviews": [
+      {
+        "Details": {
+        },
+        "TripId": 0,
+        "TripName": "Hiszpanśkie przygody"
+      },
+      {
+        "Details": {},
+        "TripId": 1,
+        "TripName": "Szlakiem Królowej"
+      },
+      {
+        "Details": {},
+        "TripId": 2,
+        "TripName": "Wakacje we włoszech"
+      },
+      {
+        "Details": {},
+        "TripId": 3,
+        "TripName": "Chorwacka przygoda"
+      },
+      {
+        "Details": {},
+        "TripId": 4,
+        "TripName": "Bliski zachód"
+      },
+      {
+        "Details": {},
+        "TripId": 5,
+        "TripName": "Romantyczna kraina"
+      },
+      {
+        "Details": {},
+        "TripId": 6,
+        "TripName": "Starożytna Grecja"
+      },
+      {
+        "Details": {},
+        "TripId": 7,
+        "TripName": "Budapeszt"
+      },  {
+        "Details": {},
+        "TripId": 8,
+        "TripName": "Krakowskim szlakiem"
+      }
+      ,  {
+        "Details": {},
+        "TripId": 9,
+        "TripName": "Wycieczka rozluźniająca"
+      }
+    ],
+    "Users": [
+      {
+        
+      }
+    ],
+    "Trips": [
+      {
+        "Amount": 10,
+        "Country": "Hiszpania",
+        "Description": "Wakacje All inclusive + wycieczki",
+        "End": "2022-05-30",
+        "Id": 0,
+        "Image": [
+          "assets/images/Spain.jpg",
+          "assets/images/Spain2.jpg",
+          "assets/images/spain3.jpg"
+        ],
+        "Name": "Hiszpanśkie przygody",
+        "Picked": 0,
+        "Price": 2000,
+        "Rating": 1,
+        "Start": "2022-05-24"
+      },
+      {
+        "Amount": 8,
+        "Country": "Anglia",
+        "Description": "Wyczieczka szlakiem Królowej Elżbiety",
+        "End": "2022-12-15",
+        "Id": 1,
+        "Image": [
+          "assets/images/England.jfif",
+          "assets/images/England2.jpg",
+          "assets/images/England3.jpg"
+        ],
+        "Name": "Szlakiem Królowej",
+        "Picked": 0,
+        "Price": 1000,
+        "Rating": 4,
+        "Start": "2022-12-01"
+      },
+      {
+        "Amount": 7,
+        "Country": "Włochy",
+        "Description": "Wycieczka dla osób pragnących chwili spokoju w pięknych miejscach",
+        "End": "2023-04-10",
+        "Id": 2,
+        "Image": [
+          "assets/images/Italy.jpg",
+          "assets/images/Italy2.jpg",
+          "assets/images/Italy3.jpg"
+        ],
+        "Name": "Wakacje we włoszech",
+        "Picked": 0,
+        "Price": 2300,
+        "Rating": 5,
+        "Start": "2023-04-04"
+      },
+      {
+        "Amount": 9,
+        "Country": "Chorwacja",
+        "Description": "Wiele atrakcji podczas zwiedzania i odpoczywania",
+        "End": "2023-08-30",
+        "Id": 3,
+        "Image": [
+          "assets/images/Croatia.jpg",
+          "assets/images/Croatia2.jfif",
+          "assets/images/Croatia3.jpg"
+        ],
+        "Name": "Chorwacka przygoda",
+        "Picked": 0,
+        "Price": 1300,
+        "Rating": 3,
+        "Start": "2023-08-21"
+      },
+      {
+        "Amount": 6,
+        "Country": "Dubai",
+        "Description": "Jedna z atrakcji jest zwiedzenie Burdż Chalify",
+        "End": "2023-11-30",
+        "Id": 4,
+        "Image": [
+          "assets/images/Dubai.jfif",
+          "assets/images/Dubai2.jpg",
+          "assets/images/Dubai3.jpg"
+        ],
+        "Name": "Bliski zachód",
+        "Picked": 0,
+        "Price": 3000,
+        "Rating": 4,
+        "Start": "2023-11-21"
+      },
+      {
+        "Amount": 7,
+        "Country": "Francja",
+        "Description": "Zwiedź Paryż w przystępnej cenie",
+        "End": "2023-07-16",
+        "Id": 5,
+        "Image": [
+          "assets/images/France.jpg",
+          "assets/images/France2.jpg",
+          "assets/images/France3.jpg"
+        ],
+        "Name": "Romantyczna kraina",
+        "Picked": 0,
+        "Price": 1800,
+        "Rating": 5,
+        "Start": "2023-07-11"
+      },
+      {
+        "Amount": 11,
+        "Country": "Grecja",
+        "Description": "Zwiedzanie połączone z odpoczynkiem",
+        "End": "2023-08-26",
+        "Id": 6,
+        "Image": [
+          "assets/images/Greece.jpg",
+          "assets/images/Greece2.jpg",
+          "assets/images/Greece3.jpg"
+        ],
+        "Name": "Starożytna Grecja",
+        "Picked": 0,
+        "Price": 3000,
+        "Rating": 5,
+        "Start": "2023-08-15"
+      },
+      {
+        "Amount": 4,
+        "Country": "Węgry",
+        "Description": "Zwiedzanie Budapesztu",
+        "End": "2023-05-22",
+        "Id": 7,
+        "Image": [
+          "assets/images/Hungary.jfif",
+          "assets/images/Budapest2.jpg",
+          "assets/images/Budapest3.jpg"
+        ],
+        "Name": "Budapeszt",
+        "Picked": 0,
+        "Price": 900,
+        "Rating": 4,
+        "Start": "2023-05-18"
+      },
+      {
+        "Amount": 8,
+        "Country": "Polska",
+        "Description": "Zwiedzenie Krakowa wraz z pobliskimi miejscowościami",
+        "End": "2023-03-16",
+        "Id": 8,
+        "Image": [
+          "assets/images/Poland.jpg",
+          "assets/images/Poland2.jpg.crdownload",
+          "assets/images/Poland3.jpg"
+        ],
+        "Name": "Krakowskim szlakiem",
+        "Picked": 0,
+        "Price": 500,
+        "Rating": 3,
+        "Start": "2023-03-14"
+      },
+      {
+        "Amount": 2,
+        "Country": "Zanzibar",
+        "Description": "Wakacje na plażach Zanzibaru",
+        "End": "2023-08-09",
+        "Id": 9,
+        "Image": [
+          "assets/images/Zanzibar.jpg",
+          "assets/images/Zanzibar2.jpg",
+          "assets/images/Zanzibar3.jpg"
+        ],
+        "Name": "Wycieczka rozluźniająca",
+        "Picked": 0,
+        "Price": 1000,
+        "Rating": 5,
+        "Start": "2023-07-30"
+      }
+    ]
+  }

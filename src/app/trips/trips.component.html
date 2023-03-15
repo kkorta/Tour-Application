@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="reservedDiv">
+        <h2 class="reserved" [ngStyle]="{'background-color': reserved() > 10 ? 'green' : 'red'}">Liczba zarezerwowanych wycieczek: {{counter}}</h2>
+        <button (click)="currencySwitch()" class="currencyBtn">Waluta: {{oppositeCurrency()}}</button>
+    </div>
+
+    <!-- <app-filters [items]="cart"></app-filters> -->
+    <div class="trips" *ngIf="trips != []">
+        <div class="trip" *ngFor="let trip of trips " [ngClass]="{'mostExpensive' : trip.Price == checkMax(trips).Price, cheapest : trip.Price == checkMin(trips).Price}" 
+        [ngStyle]="{'background-color': tripsAvailable(trip) > 3 ? 'white' : tripsAvailable(trip) == 0 ? 'rgba(255, 0, 0)': 'rgb(249, 149, 0)'}">
+            <img src="{{trip.Image[0]}}" alt="">
+        
+            <h3>{{trip.Name | uppercase}}</h3>
+            <p>Kraj: {{trip.Country | uppercase}}</p>
+            <p>Start wycieczki od {{trip.Start}} do {{trip.End}}</p>
+            <p>Opis wycieczki</p>
+            <p>{{trip.Description}}</p>
+            <p>Ilość miejsc: {{tripsAvailable(trip)}}</p>
+            <p>Cena: {{trip.Price * parentRate}} {{ parentCurrency}}</p>
+            <p><a class="details" routerLink="/trips/{{trip.Id}}">Więcej szczegółów</a></p>
+            
+            <div class="sold-out" [ngStyle]="{'display' : tripsAvailable(trip) == 0 ? 'flex' : 'none'}">
+                <h1>Wyprzedane</h1>
+            </div>
+        
+            <div class="counter">
+                <div class="star">
+                    <app-star-rating [rating]="trip.Rating"></app-star-rating>
+                </div>
+                <button (click)="add(trip)" [disabled]="tripsAvailable(trip) == 0" class="add">+</button>
+                <div class="quantity">{{tripsInCart(trip)}}</div>
+                <button (click)="minus(trip)" *ngIf="!checkNum(trip)" class="minus">-</button>
+            </div>
+            <button class="delete" (click) ="deleteTrip(trip)"><i class="fa fa-trash-o"></i></button>
+        </div>
+    </div>
+    <div *ngIf="user$">
+        <div *ngFor="let x of user$">
+            {{x}}
+            
+        </div>
+    </div>
+</div>
+

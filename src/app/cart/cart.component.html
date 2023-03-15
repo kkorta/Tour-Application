@@ -1,0 +1,22 @@
+
+<div class="container">
+   
+    <h1 *ngIf="cartValue() == 0" class="empty">Koszyk jest pusty</h1>
+    <div class="items" *ngFor="let items of cartItems | keyvalue"  [ngClass]="{'inactive': items.value == 0}">
+        <div class="trips" >
+            <img src={{items.key.Image[0]}}>
+            
+        </div>
+        <div class="box">
+            <h3 class="name">{{items.key.Name}}</h3>
+            <div class="buttons">
+                
+                <button (click)="increment(items.key)" *ngIf="items.key.Amount - items.value > 0" class="add">+</button>
+                <h3 class="places">{{items.value}}</h3>
+                <button (click)="decrement(items.key)" class="minus">-</button>
+            </div>
+            <button (click)="buyTrip(items.key, items.value)">Buy {{items.value * items.key.Price * rate}} {{currency}}</button>
+        </div>
+    </div>
+    <h3 class="sum" *ngIf="cartValue() > 0">Suma: {{cartValue() * rate}} {{currency}}</h3>
+</div>

@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    width: 100%;    
+}
+
+h3{
+    width: fit-content;
+    margin: 20px auto;
+}
+
+h1{
+    width: fit-content;
+    padding-top: 200px;
+    margin: auto;
+}
+
+.select{
+    width: fit-content;
+    margin: auto;
+}
+select{
+    
+    display: inline-block;
+    width: fit-content;
+    padding: 5px 10px;
+    align-self: center;
+}
+
+option{
+    width: fit-content;
+    margin: auto;
+}
+.trip{
+    justify-content: space-evenly;
+    padding: 20px 0 20px 0;
+    align-items: center;
+    width: 95%;
+    display: flex;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+.trip div{
+    margin: 5px;
+}
+

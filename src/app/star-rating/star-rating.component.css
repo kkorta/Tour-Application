@@ -1,0 +1,15 @@
+.ratings{
+    display: flex;
+
+    gap: 3px;
+
+    margin: 7px auto;
+}
+
+i{
+    color: #80808045;
+    cursor: pointer;
+}
+.active{
+    color: gold;
+}

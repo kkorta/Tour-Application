@@ -1,0 +1,271 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    margin: auto;
+    -webkit-box-shadow: 8px 8px 24px -3px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px -3px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px -3px rgba(66, 68, 90, 1);
+    display: flex;
+
+}
+img{
+    background-size: cover;
+}
+.strongCountry{
+    background-color: red;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 5px 7px;
+}
+
+.name{
+    background-color: red;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 5px 7px;
+}
+
+.text{
+    display: block;
+    
+}
+textarea{
+    min-height: 40px;
+    margin-top: 30px;
+    max-height: 300px;
+    padding: 5px 12px;
+}
+.ratings{
+    display: flex;
+    width: fit-content;
+    gap: 3px;
+    margin: 7px auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 7px 15px;
+    -webkit-box-shadow: 2px 2px 30px -11px rgba(66, 68, 90, 1);
+-moz-box-shadow: 2px 2px 30px -11px rgba(66, 68, 90, 1);
+box-shadow: 2px 2px 30px -11px rgba(66, 68, 90, 1);
+}
+
+.ratingsComments{
+
+    display: flex;
+    width: 100px;
+    gap: 3px;
+    margin-left: 5px;
+}
+
+i{
+    color: #80808045;
+    cursor: pointer;
+}
+.active{
+    color: gold;
+}
+.title{
+    margin: 3px auto;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 5px 7px;
+    background-color: #047aed;
+    color: white;
+}
+
+.comments{
+   margin: 100px auto;
+   background-color: white;
+   border-radius: 15px;
+   -webkit-box-shadow: 8px 2px 28px -4px rgba(66, 68, 90, 1);
+-moz-box-shadow: 8px 2px 28px -4px rgba(66, 68, 90, 1);
+box-shadow: 8px 2px 28px -4px rgba(66, 68, 90, 1); 
+
+
+}
+.myComment{
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 50px;
+    
+}
+.singleComment{
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 5px 12px;
+    -webkit-box-shadow: 2px 2px 30px -12px rgba(66, 68, 90, 1);
+-moz-box-shadow: 2px 2px 30px -12px rgba(66, 68, 90, 1);
+box-shadow: 2px 2px 30px -12px rgba(66, 68, 90, 1);
+}
+.upper{
+    display: flex;
+}
+
+.country, .duration, .longDesc, .shortDesc, .text p{
+    width: fit-content;
+    margin: 5px auto;
+    display: flex;
+}
+
+.longDescp{
+    padding: 4px 15px;
+}
+.country, .duration, .longDesc, .shortDesc{
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: #047aed;
+    color: white;
+}
+.container a{
+    background-color: #171717;
+    width: fit-content;
+    margin: 40px auto;
+    text-decoration: none;
+    color: white;
+    padding: 6px 13px;
+    border-radius: 10px;
+}
+.date{
+    font-weight: 100;
+    font-size: smaller;
+}
+@media (max-width: 1049px){
+    .container{
+        flex-direction: column;
+    }
+    .comments{
+        width: 450px;
+    }
+    textarea{
+        width: 400px;
+        max-width: 400px;
+        min-width: 400px;
+    }
+    .singleComment{
+        width: 400px;
+    }
+    .card{
+        width: 400px;
+        height: 750px;
+        flex-direction: column;
+    }
+    .image, img{
+        width: 400px;
+        height: 300px;
+
+    }
+    .leftBtn{
+        left: 3%;
+        bottom: 150px;
+    }
+    
+    .rightBtn{
+        right: 3%;
+        bottom: 150px;
+    }
+    .date{
+        margin-left: 150px;
+    }
+    .lower{
+        margin-left: 325px;
+    }
+    
+}
+
+@media (min-width: 1050px){
+    .card{
+        width: 1000px;
+        height: 450px;
+        flex-direction: row;
+    }
+    .comments{
+        width: 1000px;
+    }
+    textarea{
+        width: 900px;
+        max-width: 900px;
+        min-width: 900px;
+    }
+    .singleComment{
+        width: 900px;
+    }
+    .image, img{
+        width: 550px;
+        height: 450px;
+        
+    }
+
+    .leftBtn{
+        left: 3%;
+        bottom: 220px;
+    }
+    
+    .rightBtn{
+        right: 3%;
+        bottom: 220px;
+    }
+    .date{
+        margin-left: 625px;
+    }
+    .lower{
+        margin-left: 820px;
+    }
+}
+
+picture{
+    position: relative;
+}
+.card button{
+    text-align: center;
+    padding: 0px 7px 4px 7px;
+    color: rgb(248, 239, 239);
+    height: 50px;
+    font-size: 50px;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    
+}
+
+.card button:hover{
+    border-radius: 9px;
+    background: red;
+    opacity: 0.7;
+}
+
+.myComment button{
+    float: right;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 6px 13px;
+    border: transparent;
+    background-color: #171717;
+    color: white;
+}
+
+.myComment button:hover{
+    transform: scale(1.01);
+    background-color: #222222;
+}
+
+.lower{
+    width: fit-content;
+}
+
+form p{
+    color: red;
+    font-size: smaller;
+}
+
+.ratingSubmit{
+    width: fit-content;
+    margin: auto;
+}

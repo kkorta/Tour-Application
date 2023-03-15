@@ -1,0 +1,181 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.nav{
+    margin: 0;
+    height: 70px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+}
+
+.ul li{
+    font-size: 1.2em;
+    list-style: none;
+    display: inline-block;
+    margin: 20px 20px;
+}
+
+.ul{
+    margin-right: 100px;
+    float: right;
+}li a{
+    text-decoration: none;
+    color: white;
+    background-color: #171717;
+    padding: 5px 9px;
+    border-radius: 10px;
+}
+
+.logo{
+    color: white;
+    background-color: #171717;
+    padding: 5px 9px;
+    border-radius: 10px;
+    text-decoration: none;
+ 
+    height: fit-content;
+    font-size: 30px;
+
+  
+}
+
+
+.x{
+    position: relative;
+    background-color: #171717;
+    height: 40px;
+    width: 40px;
+    margin: 10px 0 10px 20px;
+    border-radius: 9px;
+    display: flex;
+    display: none;
+
+    
+}
+.line{
+    margin: 17px 5px;
+    position: relative;
+    width: 30px;
+    height: 3px;
+    color: white;
+    background-color: white;
+    
+
+}
+
+ .x .line::before,
+.x .line::after {
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+.x .line::before {
+    top: 10px;
+  }
+  
+.x .line::after {
+    top: -10px;
+  } 
+
+  .sidebar ul li{
+    width: fit-content;
+    margin: 20px auto;
+    list-style: none;
+  }
+
+
+.sidebar{
+  position: fixed;
+  float: right;
+  height: 100vh;
+  width: 200px;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  z-index: 999;
+}
+
+.cart{
+  position: relative;
+}
+
+a:hover{
+  transform: scale(1.05);
+}
+
+li:hover{
+  transform: scale(1.05);
+
+}
+
+.num{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: orange;
+  position: absolute;
+  right: -10%;
+  bottom: -60%;
+}
+
+  #check:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+  }
+  
+#check:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top:0;
+  }
+  
+#check:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top:0;
+  }
+
+.cartNum{
+  margin: 0;
+  padding: 0;
+}
+
+.closeX{
+  width: 100%;
+  margin-right: 10px;
+  background-color: #171717;
+  padding: 5px 9px;
+  border-radius: 7px;
+  color: white;
+  display: block;
+  float: right;
+}
+
+  @media (max-width: 1283px) {
+    .ul{
+        display: none;
+    }
+   .x{
+    display: block;
+   }
+   .logo{
+    margin: 10px 0 0 15px;
+   }
+}
+
+@media (min-width: 1283px) {
+  .logo{
+    margin: 10px 0 0 40px;
+   }
+   .x{
+    display: none;
+   }
+}

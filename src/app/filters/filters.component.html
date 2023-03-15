@@ -1,0 +1,32 @@
+<div class="container">
+    <button>Wyczyść</button>
+    <div class="box">
+        <h4>Kraj</h4>
+        <select class="localization" [ngModel]="selectedCountry" (ngModelChange)="countryChange($event)">
+            <option *ngFor="let localization of items | keyvalue">{{localization.key.Country}}</option>
+        </select>
+    </div>
+    <div class="box">
+        <h4>Minimalny koszt</h4>
+        <input type="number" placeholder="Min cena" [ngModel]="selectedMinCost" (ngModelChange)="minCostChange($event)">
+    </div>
+    <div class="box">
+        <h4>Maksymalny koszt</h4>
+        <input type="number" placeholder="Max cena">
+    </div>
+    <div class="box">
+        <h4>Wycieczki po</h4>
+        <input type="date">
+    </div>
+    <div class="box">
+        <h4>Wycieczki przed</h4>
+        <input type="date">
+    </div>
+    <div class="box">
+        <h4>Ocena</h4>
+        <select class="rate" [ngModel]="selectedRate" (ngModelChange)="rateChange($event)">
+            <option *ngFor="let rate of [1, 2, 3, 4, 5]">{{rate}}</option>
+        </select>
+    </div>
+        
+</div>

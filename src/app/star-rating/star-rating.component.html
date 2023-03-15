@@ -1,0 +1,6 @@
+
+<div class="ratings">
+    <div *ngFor="let i of stars">
+        <i class="fa fa-star checked" [ngClass]="{'active' : i <= rating}"></i>
+    </div>
+</div>

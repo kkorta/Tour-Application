@@ -1,0 +1,38 @@
+<div class="container">
+    <h3 *ngIf="boughtTrips.size != 0">Filtruj wycieczki!</h3>
+    <div class="select">
+        <select [(ngModel)]="selectedFilter" *ngIf="boughtTrips.size != 0">
+            <option *ngFor="let filter of filters">{{filter}}</option>
+        </select>
+    </div>
+    <h1 *ngIf="boughtTrips.size === 0">Brak wycieczek w historii</h1>
+    <div *ngFor="let trips of boughtTrips | keyvalue">
+        <div class="trip" *ngIf="checkFilter(trips.key)" [ngStyle]="{'background-color': checkDate() > trips.key.End ? 'gray' : checkDate() < trips.key.Start ? 'green': 'orange'}">
+            <div class="buydate">
+                <h4>Data zakupu</h4>
+                {{trips.value[1]}}
+            </div>
+            <div class="name">
+                <h4>Nazwa wycieczki</h4>
+                {{trips.key.Name}}
+            </div>
+            <div class="num">
+                <h4>Ilość miejsc</h4>
+                {{trips.value[0]}}
+            </div>
+            <div class="price">
+                <h4>Cena</h4>
+                {{trips.key.Price * trips.value[0] * rate}} {{currency}}
+            </div>
+            <div class="start">
+                <h4>Data rozpoczęcia wycieczki</h4>
+                {{trips.key.Start}}
+            </div>
+            <div class="end">
+                <h4>Data zakończenia wycieczki</h4>
+                {{trips.key.End}}
+            </div>
+            
+        </div>
+    </div>
+</div>

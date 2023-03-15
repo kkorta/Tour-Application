@@ -1,0 +1,29 @@
+<div class="nav">
+    <div class="x" (click)="change()">
+        <div class="line"></div>
+    </div>
+    <a routerLink="/" class="logo">Logo</a>
+    <ul class="ul">
+        <li><a routerLink="/trips">Wycieczki</a></li>
+        <li><a routerLink="/add-trip">Stwórz nową wycieczkę</a></li>
+        <li><a routerLink="/history">Twoje wycieczki </a></li>
+        <li class="cart"><a routerLink="/cart"><i class="fa fa-shopping-cart"></i>Koszyk <div class="num">{{numOfTrips()}}</div></a></li>
+        <li *ngIf="!checkLogged()"><a routerLink="/login">Zaloguj się</a></li>
+        <li *ngIf="!checkLogged()"><a routerLink="/register">Stwórz konto</a></li>
+        <li *ngIf="checkLogged()"><a routerLink="/login" (click)="logout()">Wyloguj się</a></li>
+
+
+    </ul>
+
+
+    <div class="sidebar" [ngStyle]="{'display': show ? 'none' : 'flex'}" *ngIf="innerWidth < 1283">
+        <ul>
+            <li class="closeX" (click)="closeSidebar()">X</li>
+            <li><a routerLink="/" (click)="change()">Home</a></li>
+            <li><a routerLink="/trips"  (click)="change()">Wycieczki {{ ($user | async)?.name }}</a></li>
+            <li><a routerLink="/add-trip"  (click)="change()">Stwórz nową wycieczkę</a></li>
+            <li><a routerLink="/history" (click)="change()">Twoje wycieczki </a></li>
+            <li class="cart"><a routerLink="/cart"  (click)="change()"><i class="fa fa-shopping-cart"></i>Koszyk <div class="num">{{numOfTrips()}}</div></a></li>
+        </ul>
+    </div>
+</div>

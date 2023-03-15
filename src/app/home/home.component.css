@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    position: relative;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_img{
+    margin: 0;
+    position: relative;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.text{
+    padding: 20px 30px;
+    font-size: 80px;
+}
+
+.details{
+    padding: 20px 30px;
+    
+}
+
+.box{
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+    opacity: 0.7;
+    border-radius: 30px;
+    padding: 10px 15px;
+    background-color: white;
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+
+    transform: translate(-50%, -50%); 
+
+
+}
+
+.box h1{
+    font-size: 2.4em;
+}
+.box h2{
+    font-size: 1.2em;
+}
+.findus{
+    width: fit-content;
+    margin: auto;
+    padding: 100px 0 40px 0;
+}
+
+i{
+    float: left;
+    padding-right: 7px;
+}
+.mail, .phone, .map{
+    width: fit-content;
+    margin: auto;
+    padding: 5px;
+}
+
+.mail{
+    padding-bottom: 30px;
+}
+

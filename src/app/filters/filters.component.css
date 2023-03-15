@@ -1,0 +1,12 @@
+
+.container{
+    width: fit-content;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.box{
+    width: fit-content;
+}
