@@ -26,6 +26,9 @@ https://user-images.githubusercontent.com/101141624/225896452-7da6c91a-9a5f-4d2a
 
 https://user-images.githubusercontent.com/101141624/225896510-1b669116-4bca-43da-9272-28236527ca85.mp4
 
+# Creating a trip
+![image](https://user-images.githubusercontent.com/101141624/225897110-04bfce16-fa7a-43ba-83fb-c57c3a668752.png)
+
 
 # Trips
 
