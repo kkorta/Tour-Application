@@ -1,4 +1,33 @@
-# Restauracja
+# Main page
+
+
+https://user-images.githubusercontent.com/101141624/225896039-9104c909-0e26-4a3b-b352-0076c505be29.mp4
+
+
+
+# Trips page
+
+https://user-images.githubusercontent.com/101141624/225895831-8234da67-7fb6-4ed9-9988-7b463420b920.mp4
+
+# Single trip page
+
+
+
+https://user-images.githubusercontent.com/101141624/225896323-489bcf74-8324-4691-b7d1-b39765c34e6b.mp4
+
+# Buying trips
+
+
+https://user-images.githubusercontent.com/101141624/225896452-7da6c91a-9a5f-4d2a-8dd0-73d7ed1c134d.mp4
+
+# Creating account and logging in
+
+
+
+https://user-images.githubusercontent.com/101141624/225896510-1b669116-4bca-43da-9272-28236527ca85.mp4
+
+
+# Trips
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
 
